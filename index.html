@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/green_nature__illustration_logo_template_social_media-removebg-preview.png">
+        <div class="navigatie">
+            <a href="#mySkills">Fotografie</a>
+            <a href="#mySkills">Webdesigns</a>
+            <a href="#mySkills">Schilderkunst</a>
+            <a href="#vragen">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welkom op mijn Portfolio pagina waar ik kort ga laten zien welke skills ik allemaal bezit en wat ik allemaal
+            kan en heb gedaan.
+            Ik ben al tijden bezig met het maken van foto's in mijn vrijetijd, en heb daar ook de benodigde spullen voor
+            om mooie foto's te maken.
+            Ook ben ik momenteel met een opleiding bezig om zowel webdesign als game development kan gaan doen. Ook hou
+            ik me in mijn
+            vrije bezig met het maken van schilderijen en vindt kunst ook leuk om te bezichtigen. Maar meer hierover
+            vind je allemaal
+            hieronder en als er vragen zijn druk dan even snel hieronder!
+        </p>
+        <div>
+            <a href="#vragen">Vragen?</a>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="mySkills">My Skills</h2>
+        <section class="skills">
+            <article>
+                <img src="images/photo-of-a-camera-in-nature.png">
+                <h3>Fotografie</h3>
+                <h6>&#9733;&#9733;&#9733;&#9733;&#9734;</h6>
+                <p>In mijn vrije tijd maak ik foto's vooral van natuur en omgevingen waar ik heen ga met vakanties's.
+                    Ik heb een vrij oude camera die ik hiervoor gebruik maar desondanks komen daar mooie en unieke
+                    foto's uit.
+                    Hieronder zou je nog wat voorbeelden kunnen zien van wat schiet!
+                </p>
+                <a>Voorbeelden</a>
+            </article>
+
+            <article>
+                <img src="images/laptop-on-desktop.png">
+                <h3>Webdesigns</h3>
+                <h6>&#9733;&#9733;&#9733;&#9734;&#9734;</h6>
+                <p>Ik volg momenteel de opleiding op de Hogeschool van Rotterdam genaamd Creative Media and Game
+                    Technologies.
+                    Daarmee kan ik uiteindelijk dus website's maken en ook te werk met games en andere programma's.
+                    Hier heb ik dus ook deze website leren bouwen en meer dingen zie je ook hieronder weer met de
+                    button!
+                </p>
+                <a>Voorbeelden</a>
+            </article>
+
+            <article>
+                <img src="images/painting-on-an-easel-in-nature.png">
+                <h3>Schilderkunst</h3>
+                <h6>&#9733;&#9733;&#9734;&#9734;&#9734;</h6>
+                <p>Schilderkunst is iets waar ik me ook zo nu en dan mee bezig hou. Minder dan met foto's omdat die wat
+                    meer tijd kost.
+                    Maar wel heb ik al wat schilderijen gemaakt maar ben toch echt meer van het bezoeken van
+                    schilderkunst.
+                    Dus hierover ga je ook meer zien van bezochten schilderijen dat dingen die ik zelf heb gemaakt.
+                    Maar alsnog wel leuk om even te kijken!
+                </p>
+                <a>Voorbeelden</a>
+            </article>
+        </section>
+        <section>
+            <h4 id="vragen">Vragenlijst</h4>
+            <form action="vragenlijst.html" method="POST">
+                <div class="name-field">
+                    <div class="name-text">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" placeholder="Voornaam" required>
+                    </div>
+                    <div class="name-text">
+                        <label for="lastname">Achternaam</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Achternaam" required>
+                    </div>
+                </div>
+
+                <div class="name-text">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="name-field">
+                    <div class="name-text">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+                    </div>
+                    <div class="name-text">
+                        <label for="birthdate">Datum</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </div>
+
+                <div class="name-text">
+                    <label for="docent">Onderwerp</label>
+                    <select id="send-to" name="send-to" required>
+                        <option value="0">Overig</option>
+                        <option value="1">Fotografie</option>
+                        <option value="2">Webdesigns</option>
+                        <option value="3">Schilderkunst</option>
+                    </select>
+                </div>
+
+                <div class="name-text">
+                    <label for="question">Jouw vraag</label>
+                    <textarea name="question" id="question" cols="30" placeholder="Stel hier je vraag aan mij!"
+                        rows="10"></textarea>
+                </div>
+
+                <div class="name-text">
+                    <label for="category">Inschrijven voor updates over mij?</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="category" name="category" value="algemeen">
+                    <label for="algemeen">Ja</label>
+                    <input type="radio" id="category" name="category" value="programmeren">
+                    <label for="programmeren">Nee</label>
+                </div>
+
+                <div class="name-field">
+                    <input type="checkbox" id="akkoord" name="menu" value="akkoord" required>
+                    <label for="akkoord">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+
+                <button type="submit">Stuur hem op!</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/green_nature__illustration_logo_template_social_media-removebg-preview.png">
+            <h5>Copyright 2023 bedrijfsnaam</h5>
+        </div>
+        <div class="navigatie">
+            <a>Privacyverklaring</a>
+            <a>Algemene voorwaarden</a>
+            <a>Cookiebeleid</a>
+            <a href="#vragen">Contact</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
